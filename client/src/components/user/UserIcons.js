@@ -6,7 +6,7 @@ import useCheckToken from '../../hooks/useCheckToken';
 import UserMenu from './UserMenu';
 
 const UserIcons = () => {
-  useCheckToken();
+  //useCheckToken();
   const {
     state: { currentUser },
   } = useValue();
