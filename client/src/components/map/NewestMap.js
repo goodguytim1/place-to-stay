@@ -47,7 +47,7 @@ const popupRef = useRef(new mapboxgl.Popup({
   closeButton: false,
   closeOnClick: false
   }))
-
+console.log(currentUser)
   
    
 //console.log(addingStop)

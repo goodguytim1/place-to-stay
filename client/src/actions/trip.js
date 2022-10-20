@@ -30,7 +30,7 @@ export const createTrip = async (trip, currentUser, dispatch, allTrips) => {
   export const getTrips = async (dispatch) => {
     const result = await fetchData({ url, method: 'GET' }, dispatch);
     if (result) {
-        console.log(result)
+        // console.log(result)
        // return result
         dispatch({ type: 'UPDATE_ALL_TRIPS', payload: result });
     }
@@ -40,8 +40,8 @@ export const createTrip = async (trip, currentUser, dispatch, allTrips) => {
   export const getUserTrips = async(dispatch, currentUser) => {
     const result = await fetchData({ url, method: 'GET' }, dispatch);
     if(result){
-      console.log(result)
-      console.log(currentUser)
+      // console.log(result)
+      // console.log(currentUser)
       dispatch({type: 'UPDATE_ALL_TRIPS', payload: result.filter(res => res.uid === currentUser.id)})
     }
   }
