@@ -9,7 +9,7 @@ import useCheckToken from '../../hooks/useCheckToken';
 import Profile from './Profile';
 
 const UserMenu = ({ anchorUserMenu, setAnchorUserMenu }) => {
-  useCheckToken();
+  //useCheckToken();
   const {
     dispatch,
     state: {

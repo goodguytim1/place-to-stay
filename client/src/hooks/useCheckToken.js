@@ -30,6 +30,7 @@ const useCheckToken = () => {
           addedImages,
           currentUser.id
         );
+        console.log("logout")
         logout(dispatch);
       }
     }

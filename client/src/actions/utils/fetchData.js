@@ -13,6 +13,7 @@ const fetchData = async (
     const data = await response.json();
     console.log(data)
     if (!data.success) {
+      console.log("not good")
       if (response.status === 401)
         dispatch({ type: 'UPDATE_USER', payload: null });
       throw new Error(data.message);

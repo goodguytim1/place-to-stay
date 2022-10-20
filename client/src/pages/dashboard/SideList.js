@@ -154,6 +154,7 @@ const SideList = ({ open, setOpen }) => {
       addedImages,
       currentUser.id
     );
+    console.log("logout")
     logout(dispatch);
   };
   return (
