@@ -4,10 +4,15 @@ import Home from './pages/Home';
 import Loading from './components/Loading';
 import Notification from './components/Notification';
 import Room from './components/rooms/Room';
-
+import { Slide } from '@mui/material';
+import { forwardRef } from 'react';
+const Transition = forwardRef((props, ref) => {
+  return <Slide direction="up" {...props} ref={ref} />;
+});
 const App = () => {
   return (
     <>
+    
       <Loading />
       <Notification />
       <BrowserRouter>

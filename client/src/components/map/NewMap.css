@@ -1,0 +1,25 @@
+.map-container {
+    height: 100vh;
+  }
+  .sidebar {
+    background-color: rgba(168, 193, 214, 0.9);
+    /* color: #fff; */
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+    }
+  
+    .wrapper {
+      position: relative;
+      /* margin-top: 64px; */
+    }
+
+    .mapboxgl-popup {
+      max-width: 400px;
+      font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      }

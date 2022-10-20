@@ -89,12 +89,12 @@ const UserMenu = ({ anchorUserMenu, setAnchorUserMenu }) => {
             Profile
           </MenuItem>
         )}
-        <MenuItem onClick={() => navigate('dashboard')}>
+        {/* <MenuItem onClick={() => navigate('dashboard')}>
           <ListItemIcon>
             <Dashboard fontSize="small" />
           </ListItemIcon>
           Dashboard
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem onClick={handleLogout}>
           <ListItemIcon>
             <Logout fontSize="small" />

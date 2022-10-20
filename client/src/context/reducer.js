@@ -103,7 +103,31 @@ const reducer = (state, action) => {
 
     case 'UPDATE_SECTION':
       return { ...state, section: action.payload };
+    case 'UPDATE_ADDING_STOP':
+      return {
+        ...state, 
+        addingStop: action.payload};
 
+    case 'UPDATE_STOP':
+      return {
+        ...state, 
+        stop: action.payload
+      }
+    case 'UPDATE_TRIP':
+      return {
+        ...state,
+        trip: action.payload
+      }
+    case 'UPDATE_ADDING_TRIP':
+      return {
+        ...state, 
+        addingTrip: action.payload
+      }
+    case 'UPDATE_ALL_TRIPS':
+      return {
+        ...state,
+        allTrips: action.payload
+      }
     default:
       throw new Error('No matched action!');
   }

@@ -27,7 +27,7 @@ const NavBar = () => {
       <AppBar>
         <Container maxWidth="lg">
           <Toolbar disableGutters>
-            <Box sx={{ mr: 1 }}>
+            {/* <Box sx={{ mr: 1 }}>
               <IconButton
                 size="large"
                 color="inherit"
@@ -35,7 +35,7 @@ const NavBar = () => {
               >
                 <Menu />
               </IconButton>
-            </Box>
+            </Box> */}
             <Typography
               variant="h6"
               component="h1"

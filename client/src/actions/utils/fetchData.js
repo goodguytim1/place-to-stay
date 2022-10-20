@@ -7,7 +7,9 @@ const fetchData = async (
     : { 'Content-Type': 'application/json' };
   body = body ? { body: JSON.stringify(body) } : {};
   try {
+    console.log("fetchData")
     const response = await fetch(url, { method, headers, ...body });
+    console.log(response)
     const data = await response.json();
     if (!data.success) {
       if (response.status === 401)

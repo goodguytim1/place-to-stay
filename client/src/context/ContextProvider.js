@@ -26,6 +26,11 @@ const initialState = {
   room: null,
   users: [],
   section: 0,
+  addingStop: false, 
+  stop: null,
+  trip: [],
+  addingTrip: false,
+  allTrips: []
 };
 
 const Context = createContext(initialState);

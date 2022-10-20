@@ -11,6 +11,8 @@ import Rooms from './rooms/Rooms';
 import AddRoom from './addRoom/AddRoom';
 import Protected from './protected/Protected';
 import { useValue } from '../context/ContextProvider';
+import NewMap from './map/NewestMap';
+import AllTripsMap from './map/AllTripsMap'
 
 const BottomNav = () => {
   const {
@@ -25,13 +27,13 @@ const BottomNav = () => {
     <Box ref={ref}>
       {
         {
-          0: <ClusterMap />,
-          1: <Rooms />,
-          2: (
-            <Protected>
-              <AddRoom />
-            </Protected>
-          ),
+          0: <Protected><NewMap /></Protected>,
+          1: <Protected><AllTripsMap/></Protected>,
+          // 2: (
+          //   <Protected>
+          //     <AddRoom />
+          //   </Protected>
+          // ),
         }[section]
       }
       <Paper
@@ -45,9 +47,9 @@ const BottomNav = () => {
             dispatch({ type: 'UPDATE_SECTION', payload: newValue })
           }
         >
-          <BottomNavigationAction label="Map" icon={<LocationOn />} />
-          <BottomNavigationAction label="Rooms" icon={<Bed />} />
-          <BottomNavigationAction label="Add" icon={<AddLocationAlt />} />
+          <BottomNavigationAction label="Personal Map" icon={<LocationOn />} />
+          <BottomNavigationAction label="Everyon's Map" icon={<LocationOn />} />
+          {/* <BottomNavigationAction label="Add" icon={<AddLocationAlt />} /> */}
         </BottomNavigation>
       </Paper>
     </Box>
