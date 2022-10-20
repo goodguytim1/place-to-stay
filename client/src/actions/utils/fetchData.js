@@ -11,6 +11,7 @@ const fetchData = async (
     const response = await fetch(url, { method, headers, ...body });
     console.log(response)
     const data = await response.json();
+    console.log(data)
     if (!data.success) {
       if (response.status === 401)
         dispatch({ type: 'UPDATE_USER', payload: null });
