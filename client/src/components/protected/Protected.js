@@ -6,6 +6,7 @@ const Protected = ({ children }) => {
   const {
     state: { currentUser },
   } = useValue();
+  console.log(currentUser)
   return currentUser ? children : <AccessMessage />;
 };
 
